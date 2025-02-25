@@ -1,6 +1,13 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        printSquareStar(10);
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("De cuantos numeros quieres que sea la figura: ");
+        int num = scanner.nextInt();
+
+        printSquareStar(num);
     }
 
     public static void printSquareStar(int number) {
@@ -24,6 +31,10 @@ public class Main {
             }
             // Nueva línea después de cada fila
             System.out.println();
+
+
         }
+
+
     }
 }
